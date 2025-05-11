@@ -59,7 +59,7 @@ function startGame() {
     "Press Space to Pause or Continue";
 
   createFood();
-  gameLoop = setInterval(update, 150);
+  gameLoop = setInterval(update, 300);
 }
 
 function createFood() {
