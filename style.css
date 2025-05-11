@@ -1,36 +1,65 @@
-body {
-  background: url("./forest.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.game-container {
+  background-image: url("./forest.jpg"); /* Replace with your image */
+  background-size: cover;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
 }
 
 canvas {
-  display: block;
-  margin: 20px auto;
-  background-color: rgba(33, 33, 33, 0.5);
-  border: 2px solid white;
+  background-color: #000;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
-#controls button {
-  width: 60px;
-  height: 60px;
-  font-size: 24px;
-  margin: 5px;
-  border-radius: 10px;
-  background-color: #333;
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: green;
   color: white;
   border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* Existing styles from earlier remain same */
+
+.controls {
+  margin-top: 15px;
 }
 
-#controls {
-  margin-top: 10px;
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
 }
 
-#scoreBoard {
-  margin-top: 10px;
-  font-size: 18px;
+.control-btn {
+  font-size: 30px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #444;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
 }

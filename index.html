@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Snake Game</h1>
-    <div id="scoreBoard">Score: <span id="scoreVal">0</span></div>
-    <canvas id="gameBoard"></canvas>
-    <div id="msg">Press Enter to Start</div>
+    <div class="game-container">
+      <h2>Snake Game</h2>
+      <p id="score">Score: 0</p>
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <button id="startBtn">Start / Restart</button>
 
-    <!-- Touch Controls -->
-    <div id="controls">
-      <div>
-        <button onclick="changeDirection('UP')">⬆️</button>
-      </div>
-      <div>
-        <button onclick="changeDirection('LEFT')">⬅️</button>
-        <button onclick="changeDirection('DOWN')">⬇️</button>
-        <button onclick="changeDirection('RIGHT')">➡️</button>
+      <div class="controls">
+        <div class="row">
+          <button class="control-btn" id="upBtn">⬆️</button>
+        </div>
+        <div class="row">
+          <button class="control-btn" id="leftBtn">⬅️</button>
+          <button class="control-btn" id="downBtn">⬇️</button>
+          <button class="control-btn" id="rightBtn">➡️</button>
+        </div>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
